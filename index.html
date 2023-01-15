@@ -1,0 +1,95 @@
+<html>
+    <head>
+        <title> Homepage </title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/0836473079.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="background">
+            <div class="navbar">
+                <img src="images/logo.png" class="logo">
+                <nav>
+                    <ul style="font-size: medium;">
+                        <li><a href="index.html" class="active"> Home </a></li>
+                        <li><a href="biodata.html" target="_blank"> Biodata </a></li>
+                        <li><a href="family.html" target="_blank"> Family </a></li>
+                        <li><a href="education.html" target="_blank"> Education </a></li>
+                        <li><a href="experience.html" target="_blank"> Experience </a></li>
+                        <li><a href="mapping.html" target="_blank"> Location </a></li>
+                        <li><a href="gallery.html" target="_blank"> Gallery </a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="content">
+
+                <p class="btn">WELCOME TO MY WEBSITE!</a>
+                <h1>Let's Get to Know Me</h1>
+                <p>Today's quote: “God, grant me the serenity to accept the things I cannot <br> change, the courage to change the things I can, and the wisdom to know <br> the difference.” — Reinhold Niebuhr</p>
+
+            <div class="social-links">
+                <a href="https://www.facebook.com/profile.php?id=100057607501378" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/nrliamn/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com/@nuraliahmatnoor3722/featured" target="_blank"><i class="fab fa-youtube"></i></a>
+                <a href="mailto:aliahnrmn.8@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+            
+            <div class="music">
+                <p>Click Here to Listen</p>
+                <img src="images/play.png" id="icon">
+                
+            </div>
+
+            </div>
+            
+            <audio id="mySong">
+                <source src="audio/star.mp3" type="audio/mp3">
+            </audio>
+
+            <script>
+                var mySong = document.getElementById("mySong");
+                var icon = document.getElementById("icon");
+
+            icon.onclick = function(){
+                if(mySong.paused){
+                    mySong.play();
+                    icon.src = "images/pause.png";
+                }else{
+                    mySong.pause();
+                    icon.src = "images/play.png";
+                }
+            }
+            </script>
+            
+            <div class="images">
+            <img src="images/girl.png" class="feature-img">
+            </div>
+
+        </div>
+
+<!----- footer ----->
+
+        <section class="footer">
+            <h4>About Me </h4>
+                <nav>
+                    <ul style="font-size: medium;">
+                        <li><a href="index.html" target="_blank"> Home </a></li>
+                        <li><a href="biodata.html" target="_blank"> Biodata </a></li>
+                        <li><a href="family.html" target="_blank"> Family </a></li>
+                        <li><a href="education.html" target="_blank"> Education </a></li>
+                        <li><a href="experience.html" target="_blank"> Experience </a></li>
+                        <li><a href="mapping.html" target="_blank"> Location </a></li>
+                        <li><a href="gallery.html" target="_blank"> Gallery </a></li>
+                    </ul>
+                </nav>
+            <div class="icons">
+                <a href="https://www.facebook.com/profile.php?id=100057607501378" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/nrliamn/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com/@nuraliahmatnoor3722/featured" target="_blank"><i class="fab fa-youtube"></i></a>
+                <a href="mailto:aliahnrmn.8@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+            <p> &copy;2023 UiTM Rembau. Made with <i class="fa fa-heart-o"></i> by Nur Aliah bt Mat Noor (2020616724) </p>    
+        
+        </section>
+    </body>
+</html>
